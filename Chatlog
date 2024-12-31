@@ -74,3 +74,22 @@ PrivateProperties = {
 	local chatFrame = player.PlayerGui.Chat.Frame
 	chatFrame.ChatChannelParentFrame.Visible = true
 	chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+
+
+
+
+
+
+
+
+
+
+
+local TextChatService = game:GetService("TextChatService")
+
+local chatConfig = TextChatService:FindFirstChildOfClass("ChatWindowConfiguration")
+if chatConfig then
+    chatConfig.Enabled = true
+else
+    print("it works gg")
+end
